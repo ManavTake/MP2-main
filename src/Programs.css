@@ -1,0 +1,39 @@
+.Programs {
+    padding: 20px;
+  }
+  
+  .Programs h1 {
+    font-size: 2em;
+    color: #333;
+  }
+  .Programs {
+    text-align: center;
+  }
+  
+  .program-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the two programs */
+    margin-top: 20px;
+  }
+  
+  .program {
+    border: 1px solid #ddd; /* Optional: Add a border */
+    padding: 20px; /* Padding inside each program div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    width: 45%; /* Width of each program div */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  @media (max-width: 768px) {
+    .program-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .program {
+      width: 80%; /* Adjust width for smaller screens */
+      margin-bottom: 20px; /* Space between programs on smaller screens */
+    }
+  }
+  
